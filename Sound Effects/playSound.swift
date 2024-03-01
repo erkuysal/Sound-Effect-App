@@ -17,30 +17,23 @@ func playSound(audioName: String){
         player.stop()
         print("Paused")
         
-    } 
+    }
     else
     {
         // Play
         print("Playing sound!")
-        //Btn.setImage(<#T##CIImage#>)   Place a paused image
         
         let source = Bundle.main.path(forResource: audioName, ofType: "wav")
         let url = URL(fileURLWithPath: source!)
         
         do {
-            
             audioPlayer = try AVAudioPlayer(contentsOf: url)
             audioPlayer?.play()
-            
-        } 
-        catch 
+        }
+        catch
         {
-            
             print("Can not play sound!")
-            
         }
         
-        
     }
-    
 }

@@ -9,84 +9,78 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+       
+        VStack 
+        {
             HStack{
-                Button("eman") {
-                    playSound(audioName: "eman")
-                }
-                .frame(width: 100.0, height: 100.0)
-                .background()
                 
-                Button("tick") {
-                    playSound(audioName: "tick")
+                Button("eman")
+                {
+                SoundManager.shared.playSound(audioName: "eman")
                 }
-                .frame(width: 100.0, height: 100.0)
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
                 
-                Button("wrong") {
-                    playSound(audioName: "wrong")
+                Button("tick")
+                {
+                SoundManager.shared.playSound(audioName: "tick")
                 }
-                .frame(width: 100.0, height: 100.0)
-            }
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                
+                Button("wrong")
+                {
+                SoundManager.shared.playSound(audioName: "wrong")
+                }
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                
+            } // Add more buttons to play other sounds as needed
             
-            .padding()
-            
-            HStack{
-                Button("m-suspense") {
-                    playSound(audioName: "m-suspense")
-                }
-                .frame(width: 100.0, height: 100.0)
-                
-                Button("m-timer") {
-                    playSound(audioName: "m-timer")
-                }
-                .frame(width: 100.0, height: 100.0)
-                
-                Button("m-right") {
-                    playSound(audioName: "m-right")
-                }
-                .frame(width: 100.0, height: 100.0)
-            }
-            
-            .padding()
+            .padding(20)
             
             HStack{
-                Button("m-audience") {
-                    playSound(audioName: "eman")
-                }
-                .frame(width: 100.0, height: 100.0)
                 
-                Button("rahatsiz") {
-                    playSound(audioName: "rahatsiz")
+                Button("m-intro")
+                {
+                SoundManager.shared.playSound(audioName: "m-intro")
                 }
-                .frame(width: 100.0, height: 100.0)
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
                 
-                Button("m-intro") {
-                    playSound(audioName: "m-intro")
+                Button("m-suspense")
+                {
+                SoundManager.shared.playSound(audioName: "m-suspense")
                 }
-                .frame(width: 100.0, height: 100.0)
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                
+                Button("m-timer")
+                {
+                SoundManager.shared.playSound(audioName: "m-timer")
+                }
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                
             }
             
-            .padding()
+            .padding(20)
             
             HStack{
-                Button("Button") {
-                        playSound(audioName: "eman")
-                    
-                }
-                .frame(width: 100.0, height: 100.0)
                 
-                Button("Button") {
-                    playSound(audioName: "eman")
+                Button("m-right")
+                {
+                SoundManager.shared.playSound(audioName: "m-right")
                 }
-                .frame(width: 100.0, height: 100.0)
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
                 
-                Button("Button") {
-                    playSound(audioName: "eman")
+                Button("m-audience")
+                {
+                SoundManager.shared.playSound(audioName: "m-audience")
                 }
-                .frame(width: 100.0, height: 100.0)
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                
+                Button("rahatsiz")
+                {
+                SoundManager.shared.playSound(audioName: "rahatsiz")
+                }
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                
             }
-            
-            
         }
        
     }
